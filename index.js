@@ -8,12 +8,13 @@ var textarea = document.querySelector('textarea')
 // Then apply them to elements on the page
 // YOUR CODE HERE
 
-nameCookie = document.cookie;
-if (nameCookie) {
-  nameSpan.textContent = nameCookie.split('=')[1];
+cookieName = document.cookie;
+if (cookieName) {
+  nameSpan.textContent = cookieName.split('=');
 }
 
 textarea.value = localStorage.getItem('textarea');
+
 
 
 
